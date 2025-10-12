@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Projects | My Portfolio</title>
+
+    <!-- Logo-icon for web-page -->
+    <link rel="icon"  type="image/png"   href="assets/images/webprofile512circleborder.png">
+     <!-- Bootstrap 5 -->
+     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/styling.css">
+
+    <!-- Animation library cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">      
+</head>
+<style>
+    body.dark-mode .myproject-title{
+        color: white;
+    }
+    .myproject-title{
+        color: black;
+    }
+    .bi-check-circle{
+        color: #00ff00;
+    }
+    .bi-check-circle-developing{
+        color: lightcoral;
+    }
+    .bi-check-circle-inprogress{
+        color: lightcoral;
+    }
+    h3{
+        color: dodgerblue;
+    }
+    .developing{
+        color: lightcoral;
+    }
+    .inprogress{
+        color: lightcoral;
+    }
+    .white-text {
+        color: black;
+    }
+</style>
+
+
+<body>
+ <!-- Navbar -->
+ <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-sm py-3 fixed-top" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="500">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/borin_logo_brand.png" alt="web-developer" width="50" height="50" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler  bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html#reference">Reference</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary-gradient fixed-top" >
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/borin_logo_brand.png" alt="Web Developer" width="50" height="50" class="d-inline-block align-text-top">
+        </a>
+        <!-- Custom Hamburger Menu -->
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="nav_bar">
+                <div class="bar1 bg-primary"></div>
+                <div class="bar2 bg-primary"></div>
+                <div class="bar3 bg-primary"></div>
+            </div>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html#reference">Reference</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  active" href="home.html#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero-section -->
+
+<!-- dark-mode icon style -->
+<div class="form-check form-switch ms-auto dark-mode-toggle" style="position: fixed; top: 24px; right: 90px; z-index: 10000;">
+    <input class="form-check-input" type="checkbox" id="darkModeToggle" style="display: none;">
+    <label class="form-check-label" for="darkModeToggle" style="cursor: pointer;">
+        <i class="fa fa-sun" aria-hidden="true" id="sunIcon" style="display: none;"></i>
+        <i class="fa fa-moon" aria-hidden="true" id="moonIcon"></i>
+    </label>
+</div>
+<header id="hero" class="py-5 hero-section" style="border: none; box-shadow: none;">
+
+     <!-- Floating Gradient Shapes -->
+     <div class="shape circle"></div>
+     <div class="shape square"></div>
+     <div class="shape triangle"></div>
+     <div class="shape rectangle"></div>
+
+    <!-- Portfloio-section -->
+    <!-- <div id="portfolio" class="py-5 mt-3">
+    <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-up" data-aos-duration="1000">My Projects</h2>
+        <div class="row g-5">
+            <div class="col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="assets/images/Portfolio Website.png" class="d-block mx-auto img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;" alt="Project 1">
+            </div>
+            <div class="col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="assets/images/ISO-poster.png" class="d-block mx-auto img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;" alt="Project 2">
+            </div>
+            <div class="col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="assets/images/vdo-project.png" class="d-block mx-auto img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;" alt="Project 3">
+            </div>
+            <div class="col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="assets/images/SMD.png" class="d-block mx-auto img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;" alt="Project 4">
+            </div>
+        </div>
+        <div class="row g-5 mt-1">
+            <div class="col-md-3" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="assets/images/gws project.png" class="d-block mx-auto img-fluid rounded" style="width: 300px; height: 300px; object-fit: cover;" alt="Project 4">
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+    <!-- Project decription -->
+    <section class="project py-5" style="margin-top: 100px;">
+    <div class="container">
+        <div class="row mb-4 flex-column flex-md-row">
+            <div class="col-12 d-flex flex-column flex-md-row">
+                <h2 class= "mb-4 " style="font-size: 2rem;"  data-aos="fade-up" data-aos-duration="1000">Description /</h2>
+                <span style="font-size: 1.5rem;" class=" myproject-title text-center fw-bold ms-md-3 mt-2 " data-aos="fade-left" data-aos-duration="1000">My Projects</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mb-4 flex-column flex-md-row" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="500">
+            <!-- Row 1 -->
+            <div class="col-12 d-flex flex-column flex-md-row">
+                <div class="col-md-6">
+                    <img src="assets/images/1.gif" alt="portfolio" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 ms-md-5 mt-3 mt-md-0">
+                    <h3 class="fw-bold">Description</h3>
+                    <p  class="form-check-label white-text" style="font-size: 1.2rem; line-height: 1.8; ">
+                        My portfolio is a carefully curated showcase of my expertise in IT field. 
+                        It features a diverse range of innovative projects that demonstrate my creativity, 
+                        technical abilities, and commitment to excellence. Each project reflects my growth, 
+                        problem-solving skills, and dedication to delivering impactful solutions.
+                    </p>
+                    <!-- Add icon, button, and "In progress" text -->
+                    <div class="row d-flex align-items-center mt-3">
+                        <div class="col-5">
+                            <i class="bi bi-check-circle bi-check-circle-developing me-2" style="font-size: 1.5rem;"></i> <!-- Bootstrap Icon -->
+                            <span class="developing fw-bold me-3" style="font-size: 1rem;">Developing</span>
+                            <!-- <button class="btn btn-info btn-sm">Learn More</button> -->
+                        </div>
+                        <!-- Logos -->
+                        <div class="col-7 d-flex justify-content-end gap-1">
+                            <div class="d-flex justify-content-end gap-1 ms-5 ms-md-0">
+                                <img src="assets/images/tools-logo/html.png" alt="html" class="rounded-circle me-2" style="width: 30px; height: 30px;">
+                                <img src="assets/images/tools-logo/css.png" alt="Css" class="rounded-circle me-2" style="width: 30px; height: 30px;">
+                                <img src="assets/images/tools-logo/javascript.png" alt="javascript" class="rounded-circle me-2" style="width: 30px; height: 30px;">
+                                <img src="assets/images/tools-logo/bootstrap5.png" alt="Bootstrap" class="rounded-circle" style="width: 30px; height: 30px;">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4 flex-column flex-md-row" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="500">
+            <!-- Row 2 -->
+            <div class="col-12 d-flex flex-column flex-md-row">
+                <div class="col-md-6">
+                    <img src="assets/images/2.gif" alt="Graphic-design" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 ms-md-5 mt-3 mt-md-0"> 
+                    <h3 class="fw-bold">Description</h3>
+                    <p  class="form-check-label white-text" style="font-size: 1.2rem; line-height: 1.8;">
+                        This project showcases my expertise in graphic design through the creation of a captivating poster for ISO School. 
+                        The design blends creativity, visual appeal, and effective communication to reflect the school’s identity and values.
+                    </p>
+                    <!-- Add icon, button, and "In progress" text -->
+                    <div class="row d-flex align-items-center mt-3">
+                        <div class="col-5">
+                            <i class="bi bi-check-circle text-success me-2" style="font-size: 1.5rem;"></i> <!-- Bootstrap Icon -->
+                            <span class="text-success fw-bold me-3" style="font-size: 1rem;">Completed</span>
+                            <!-- <button class="btn btn-info btn-sm">Learn More</button> -->
+                        </div>
+                        <!-- Logos -->
+                        <div class="col-7 d-flex justify-content-end gap-1">
+                            <div class="d-flex justify-content-end gap-1 ms-5 ms-md-0">
+                                <img src="assets/images/tools-logo/canva.png" alt="Css" class="rounded-circle me-2" style="width: 30px; height: 30px;"> 
+                                <img src="assets/images/tools-logo/photoshop.png" alt="html" class="rounded-circle me-2" style="width: 30px; height: 30px;">  
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4 flex-column flex-md-row" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="500">
+            <!-- Row 3 -->
+            <div class="col-12 d-flex flex-column flex-md-row">
+                <div class="col-md-6">
+                    <img src="assets/images/3.gif" alt="Video project" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 ms-md-5 mt-3 mt-md-0">
+                    <h3 class="fw-bold">Description</h3>
+                    <p  class="form-check-label white-text" style="font-size: 1.2rem; line-height: 1.8; ">
+                        This project highlights my skills in storytelling and video production through English-language videos about the School. 
+                        These videos showcase the school's environment, dedicated teachers, effective management, 
+                        and the importance of education and the valuable role of volunteers who foster collaboration and cultural exchange.
+                    </p>
+                    <!-- Add icon, button, and "In progress" text -->
+                    <div class="row d-flex align-items-center mt-3">
+                        <div class="col-5">
+                            <i class="bi bi-check-circle text-success me-2" style="font-size: 1.5rem;"></i> <!-- Bootstrap Icon -->
+                            <span class="text-success fw-bold me-3" style="font-size: 1rem;">Completed</span>
+                            <!-- <button class="btn btn-info btn-sm">Learn More</button> -->
+                        </div>
+                        <!-- Logos -->
+                        <div class="col-7 d-flex justify-content-end gap-1">
+                            <div class="d-flex justify-content-end gap-1 ms-5 ms-md-0">
+                                <img src="assets/images/tools-logo/capcut.png" alt="Css" class="rounded-circle me-2" style="width: 30px; height: 30px;"> 
+                                <img src="assets/images/tools-logo/kindmaster.png" alt="html" class="rounded-circle me-2" style="width: 30px; height: 30px;">
+                                <img src="assets/images/tools-logo/Premirepro.png" alt="html" class="rounded-circle me-2" style="width: 30px; height: 30px;">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4 flex-column flex-md-row" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="500">
+            <!-- Row 4 -->
+            <div class="col-12 d-flex flex-column flex-md-row">
+                <div class="col-md-6">
+                    <img src="assets/images/4.gif" alt="School-system" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 ms-md-5 mt-3 mt-md-0">
+                    <h3 class="fw-bold">Description</h3>
+                    <p  class="form-check-label white-text" style="font-size: 1.2rem; line-height: 1.8; ">
+                        This project demonstrates my expertise in creating and system management by designing
+                        an efficient solution for the School to track student attendance 
+                        and generate weekly reports. Utilizing Google Sheets as a tool, I created a streamlined, 
+                        authentication and user-friendly system that ensures accurate record-keeping, 
+                        timely updates, and enhanced administrative efficiency.
+                    </p>
+                    <!-- Add icon, button, and "In progress" text -->
+                    <div class="row d-flex align-items-center mt-3">
+                        <div class="col-5">
+                            <i class="bi bi-check-circle text-success me-2" style="font-size: 1.5rem;"></i> <!-- Bootstrap Icon -->
+                            <span class="text-success fw-bold me-3" style="font-size: 1rem;">Completed</span>
+                            <!-- <button class="btn btn-info btn-sm">Learn More</button> -->
+                        </div>
+                        <!-- Logos -->
+                        <div class="col-7 d-flex justify-content-end gap-1">
+                            <div class="d-flex justify-content-end gap-1 ms-5 ms-md-0">
+                                <img src="assets/images/tools-logo/docs-slide-sheet.png" alt="Css" class="rounded-circle me-2" style="width: 30px; height: 30px;"> 
+                                <img src="assets/images/tools-logo/google-drive.png" alt="html" class="rounded-circle me-2" style="width: 30px; height: 30px;">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4 flex-column flex-md-row" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="500">
+            <!-- Row 5 -->
+            <div class="col-12 d-flex flex-column flex-md-row">
+                <div class="col-md-6">
+                    <img src="assets/images/5.gif" alt="School-website" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 ms-md-5 mt-3 mt-md-0">
+                    <h3 class="fw-bold">Description</h3>
+                    <p  class="form-check-label white-text" style="font-size: 1.2rem; line-height: 1.8; ">
+                        This project showcases my web development skills through the creation of a dynamic and 
+                        user-friendly website for the School. The site features intuitive navigation, engaging visuals, 
+                        and comprehensive information about the school, including its programs, staff, and achievements. 
+                        Designed to enhance communication and accessibility, the website serves as a digital hub for students, 
+                        parents, and the broader school community.
+                    </p>
+                    <!-- Add icon, button, and "In progress" text -->
+                    <div class="row d-flex align-items-center mt-3">
+                        <div class="col-5">
+                            <i class="bi bi-check-circle bi-check-circle-inprogress me-2" style="font-size: 1.5rem;"></i> <!-- Bootstrap Icon -->
+                            <span class="inprogress fw-bold me-3" style="font-size: 1rem;">In progress</span>
+                            <!-- <button class="btn btn-info btn-sm">Learn More</button> -->
+                        </div>
+                        <!-- Logos -->
+                        <div class="col-7 d-flex justify-content-end gap-1">
+                            <div class="d-flex justify-content-end gap-1 ms-5 ms-md-0">
+                                <img src="assets/images/tools-logo/html.png" alt="html" class="rounded-circle me-2" style="width: 30px; height: 30px;">
+                                <img src="assets/images/tools-logo/css.png" alt="Css" class="rounded-circle me-2" style="width: 30px; height: 30px;">
+                                <img src="assets/images/tools-logo/javascript.png" alt="javascript" class="rounded-circle me-2" style="width: 30px; height: 30px;">
+                                <img src="assets/images/tools-logo/bootstrap5.png" alt="Bootstrap" class="rounded-circle" style="width: 30px; height: 30px;">
+                                <img src="assets/images/tools-logo/laravel.png" alt="Laravel" class="rounded-circle" style="width: 30px; height: 30px;">
+                                <img src="assets/images/tools-logo/mysql.png" alt="Laravel" class="rounded-circle" style="width: 30px; height: 30px;">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+</header> 
+
+
+<!-- footer -->
+<div class="container-fluid footer mt-5 text-white">
+    <div class="floating-shapes">
+        <div class="floating-shape circle"></div>
+        <div class="floating-shape square"></div>
+        <div class="floating-shape triangle"></div>
+        <div class="floating-shape circle"></div>
+    </div>
+
+    <div class="row justify-content-center p-5">
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in-down" data-aos-duration="1000">
+            <h6 class="text-center text-primary">Quick Links</h6>
+            <ul class="list-unstyled footer-menu mt-5">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 address-text" data-aos="zoom-in-down" data-aos-duration="1300">
+            <h6 class="text-center text-success">Address</h6>
+            <p class="mt-5">68 Stree, Samrong, Oddar Meanchey,<br> Phom Phen, Cambodia. <br>Zip Code: 2405<br> (The last area of Khmer Rouge)</p>
+            <p>Email Address : <a href="mailto:borinphon85@gmail.com"><b>borinphon85@gmail.com</b></a></p>
+            <div class="row ">
+                <div class="col-12">
+                    <div class="social-icon-footer d-flex flex-wrap justify-content-left" id="social-icon">
+                        <a href="https://web.facebook.com/borin.phon.71" class="m-2" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@_borin714_?is_from_webapp=1&sender_device=pc" class="m-2" target="_blank">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/0885949750" class="m-2" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="" class="m-2">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://t.me/PhounBorin" class="m-2" target="_blank">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 vertical-line" data-aos="zoom-in-down" data-aos-duration="1600">
+            <h6 class="text-center Project-in-progress-color">Project in progress</h6>
+            <div class="d-flex justify-content-center h-100 w-100">
+                <div class="footer-slider mt-5">
+                    <div class="project-slider align-items-center" id="projectSlider">
+                        <a href=""><img src="assets/images/Portfolio Website.png" alt="Image 1"></a>
+                        <a href=""><img src="assets/images/gws project.png" alt="Image 2"></a>
+                        <a href=""><img src="assets/images/SMD.png" alt="Image 3"></a>
+                    </div>
+                    <h3 class=" align-items-center justify-content-center">Coming soon..</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 developed-by" data-aos="zoom-in-down" data-aos-duration="1900">
+            <h6 class="text-center Developed-by-color">Developed by</h6>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#school-system">
+                        <img src="assets/images/hero-imga.png" class="d-block mx-auto" style="max-width: 60%; height: auto; object-fit: cover;" alt="School-System">
+                    </a>
+                </li>
+            </ul>
+            <!-- Arrow Button -->
+            <div class="text-center my-3">
+                <a href="#top" class="btn btn-primary btn-footer">⬆</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="footer-bottom">
+                © 2025 <span class="footer-bottom-copyright">PHOUN BORIN</span> | All Rights Reserved
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Animation library sdn -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+     // Menu style
+     document.addEventListener("DOMContentLoaded", () => {
+            const toggler = document.querySelector(".navbar-toggler");
+            const navBar = toggler.querySelector(".nav_bar");
+
+            toggler.addEventListener("click", () => {
+                navBar.classList.toggle("open");
+        });
+    });
+
+
+    AOS.init();
+
+      // Dark mode icon style
+document.getElementById('darkModeToggle').addEventListener('change', function() {
+    if (this.checked) {
+        document.body.classList.add('dark-mode');
+            document.getElementById('moonIcon').style.display = 'none';
+            document.getElementById('sunIcon').style.display = 'inline';
+        } else {
+        document.body.classList.remove('dark-mode');
+        document.getElementById('moonIcon').style.display = 'inline';
+        document.getElementById('sunIcon').style.display = 'none';
+        }               
+});
+</script>
+
+
+
+
+</body>
+</html>
